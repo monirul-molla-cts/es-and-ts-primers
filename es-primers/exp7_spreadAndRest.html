@@ -35,8 +35,18 @@
 
 		// or in es6 style:
 		const addEs6 =  (...numbers) => numbers.reduce((acc, c) => acc + c, 0); //acc is the accumulator and 0 actually initialize the value
-    //const addEs6 =  (...numbers) => numbers.reduce((p, c) => p + c, 5); in this case it will give output 11
+       //const addEs6 =  (...numbers) => numbers.reduce((p, c) => p + c, 5); in this case it will give output 11
 		console.log(addEs6(1, 2, 3)); // 6
+
+		// example of map
+		const arr = [1,2,3,4,5];
+		const newArray = arr.map(i => i*10);
+		console.log(newArray);// return a new array with all value as multiple of 10;
+
+		// example of filter
+		const arr1 = [1,2,3,4,5];
+		const newArray1 = arr1.filter(i => i%2 == 0);
+		console.log(newArray1); //return a new array with value [2, 4]
 
 	})();
 
